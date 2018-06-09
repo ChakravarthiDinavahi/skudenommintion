@@ -1,0 +1,9 @@
+      <%= form_tag(denomination_path) do %>
+     <%= label_tag :denomination %>
+     <%= text_field_tag :denomination, params[:denomination] %><br>
+     <%= label_tag :denomination %>
+
+     <%= file_field_tag 'attachment'%><br>
+
+     <%= submit_tag "Submit", class: "btn btn-large btn-primary" %>
+   <% end %>

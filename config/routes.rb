@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get '/denomination' => "home#denomination"
 
+  post '/denomination' => "home#proceesing"
+  get '/combination' => "home#combination"
 
 
 
