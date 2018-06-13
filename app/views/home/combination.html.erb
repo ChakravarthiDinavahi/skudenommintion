@@ -1,0 +1,20 @@
+<table border="1px">
+  <thead>
+    <tr>
+      <td>sku denomination</td>
+      <td>sku sku_combination</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% i=@denomination.sku_denomination %>
+    <% @denomination.sku_combination.each do |combination|%>
+    <tr>
+      <td><%= i %></td>
+      <% i=i+1 %>
+      <td>
+          <%= combination%>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,9 +1,10 @@
-      <%= form_tag(denomination_path) do %>
-     <%= label_tag :denomination %>
-     <%= text_field_tag :denomination, params[:denomination] %><br>
-     <%= label_tag :denomination %>
 
-     <%= file_field_tag 'attachment'%><br>
+   <%= form_tag '/denomination', multipart: true do %>
+        <label for="denomination">Denomination</label><%= text_field_tag :denomination%><br>
+        <label for="attachment">File to Upload</label> <input id="attachment" name="attachment" type="file" />
 
-     <%= submit_tag "Submit", class: "btn btn-large btn-primary" %>
+     <%= submit_tag %>
    <% end %>
+
+
+   <%#= file_field_tag :attachment %>

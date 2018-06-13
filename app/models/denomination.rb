@@ -1,22 +1,11 @@
 class Denomination < ApplicationRecord
-
-  def get_combination(a,b,c)
-
-    result=[]
-    temp=[]
-
-    a.each do |i|
-    	b.each do |j|
-    		c.each do |k|
-    		temp<<i
-    		temp<<j
-    		temp<<k
-
-    result<< temp
-    temp=[]
-    	end
+  serialize :sku_combination, Array
+    def self.get_combination(arrays)
+arrays.shift
+arrays.pop
+arrays=arrays.collect{|a| a.compact}
+      first=arrays.first
+      arrays.shift
+      result=first.product(*arrays)
     end
-    end
-    return result
-  end
 end
