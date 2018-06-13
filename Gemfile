@@ -40,6 +40,11 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+group :production do
+  gem 'pg'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -50,6 +55,7 @@ group :development do
   gem 'mailcatcher'
   gem 'rspec-rails'
   gem 'pry-rails'
+  # gem 'sqlite3'
 
 end
 
@@ -70,5 +76,3 @@ gem 'omniauth'
 gem 'omniauth-facebook', '~> 3.0.0'
 
 gem 'figaro'
-
- gem 'sqlite3'
