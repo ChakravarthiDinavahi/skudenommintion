@@ -48,6 +48,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'mailcatcher'
+  gem 'rspec-rails'
+  gem 'pry-rails'
+
 end
 
 group :test do
@@ -69,4 +72,3 @@ gem 'omniauth-facebook', '~> 3.0.0'
 gem 'figaro'
 
  gem 'sqlite3'
- gem 'pry-rails'
