@@ -259,9 +259,10 @@ config.secret_key = '3bf3534234693e9393741f00093b0594577b81bfddcf752395f086feeab
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   # config.omniauth :facebook, "APP_ID", "APP_SECRET"
   # config.omniauth :facebook, "1273084379495074", "53d47316786d350a9a67b8c11fd4b3f7", token_params: { parse: :json }
-  config.omniauth :facebook, "1273084379495074", "53d47316786d350a9a67b8c11fd4b3f7", callback_url: "http://localhost:3000/users/auth/facebook/callback"
+  config.omniauth :facebook, "1273084379495074", "53d47316786d350a9a67b8c11fd4b3f7"
   # /config/initializers/devise.rb
-  config.omniauth :facebook, setup: true
+  # config.omniauth :facebook, setup: true
+  # config.omniauth :facebook, "APP_ID", "APP_SECRET"
 
   # routes.rb
   # devise_scope :user do
