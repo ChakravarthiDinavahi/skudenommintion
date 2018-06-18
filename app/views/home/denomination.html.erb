@@ -1,10 +1,5 @@
-
    <%= form_tag '/denomination', multipart: true do %>
-        <label for="denomination">Denomination</label><%= text_field_tag :denomination%><br>
-        <label for="attachment">File to Upload</label> <input id="attachment" name="attachment" type="file" />
-
+        <label for="denomination">Denomination</label><input id="denomination" name="denomination" type="number" required/><br>
+        <label for="attachment">File to Upload</label> <input id="attachment" name="attachment" type="file" required/>
      <%= submit_tag %>
    <% end %>
-
-
-   <%#= file_field_tag :attachment %>

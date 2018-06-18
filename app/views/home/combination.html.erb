@@ -6,11 +6,11 @@
     </tr>
   </thead>
   <tbody>
-    <% i=@denomination.sku_denomination %>
+    <% index=@denomination.sku_denomination %>
     <% @denomination.sku_combination.each do |combination|%>
     <tr>
-      <td><%= i %></td>
-      <% i=i+1 %>
+      <% index=index+1 %>
+      <td><%= index %></td>
       <td>
           <%= combination%>
       </td>
